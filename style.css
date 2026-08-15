@@ -1,0 +1,117 @@
+*{
+  font-family: Times New Roman;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('bg2.jpg');
+  background-size: cover;
+  padding: 20px 10px;
+}
+
+.box{
+  background: transparent;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 600px;
+  border-radius: 22px;
+  padding: 22px;
+  color: white;
+}
+
+
+
+input[type="text"],
+input[type="password"],
+select,
+textarea{
+  width: 100%;
+  border: 1px solid rgba(255,255,255,0.5);
+  outline: none;
+  font-size: 13px;
+  padding: 5px;
+  background: rgba(255,255,255,0.22);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.08);
+  color: white;
+  border-radius: 14px;
+}
+
+input[type="text"],
+input[type="password"],
+select{
+  height: 30px;
+}
+
+textarea{
+  height: 60px;
+  resize: vertical;
+}
+
+textarea::placeholder{
+  color: white;
+  opacity: 0.8;
+}
+
+.txt{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+select{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.rad,
+.cb{
+  margin-left: 0;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.rad label,
+.cb label{
+  display: block;
+  align-items: center;
+  gap: 13px;
+  font-size: 13px;
+  margin: 1px 0;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+  width: 23px;
+  height: 13px;
+  cursor: pointer;
+}
+
+button{
+  width: 100%;
+  margin-top: 20px;
+  height: 64px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.45);
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover{
+  background: rgba(255,255,255,0.7);
+  transform: scale(1.01);
+}
+
+button:active{
+  transform: scale(0.98);
+}
