@@ -7,14 +7,17 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background-image: url('bg2.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: black;
+  background-image: url('bg3.jpg');
+  background-size: cover;
+  background-position: center;
   padding: 20px 10px;
 }
 
+@media (max-width: 600px){
+  body{
+    background-image: url('bg2.jpg');
+  }
+}
 .box{
   background: transparent;
   backdrop-filter: blur(12px);
